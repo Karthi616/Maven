@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+  <groups>
+  <define name="Employee Details">
+  
+  <include name="BankDetails"></include>
+  <include name="PersonalDetails"></include>
+  </define>
+  <run>
+  
+  <include name="Employee Details"></include>
+  
+  
+  </run>
+  
+  
+  </groups>
+    <classes>
+      <class name="com.Project.org.MavenProject.Grouping_Test"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
